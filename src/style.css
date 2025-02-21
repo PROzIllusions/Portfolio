@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: whitesmoke;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00ffff;
+}
+
+.home {
+    height: 100vh;
+    background: #0a1020;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Space between content and image */
+    padding: 160px 10% 0;
+    color: white;
+}
+
+.home-content {
+    flex: 1;
+    margin-right: 20px; /* Space between content and image */
+}
+
+.home-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-pic img {
+    border: 5px solid #00FFFF; /* Light blue aqua border */
+    border-radius: 10px; /* Small radius */
+    width: 100%; /* Larger size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about {
+    height: auto;
+    background: #0a1020;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 40px 10% 0; /* Adjusted padding */
+    color: white;
+}
+
+.projects {
+    height:auto;
+    background: #0a1020;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 80px 10% 0; /* Adjusted padding */
+    color: white;
+}
+
+.skills {
+    height:auto;
+    background: #0a1020;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 80px 10% 0; /* Adjusted padding */
+    color: white;
+}
+
+.contact {
+    height:auto;
+    background: #0a1020;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 80px 10% 0; /* Adjusted padding */
+    color: white;
+}
+
+.transitioning-words {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 1s;
+    color:aqua
+}
+
+.transitioning-words.active {
+    opacity: 1;
+}
